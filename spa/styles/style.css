@@ -12,13 +12,14 @@
   --donker-blauw: #2e3553;
   --grijs: #eff4f5;
   --groen: #75B6A2;
+  --donker-groen: #43685D;
   --lichte-groen: #99C7B9;
   --zwart: #202020;
   --algemene-text: 'Josefin Sans', sans-serif;
-  --quote-text: 'Prata', serif;
-
+  --quote-text: 'Gloock', serif;
+  --paragraaf: 'Inter',sans-serif;
   --tags-drop-shadow: drop-shadow(.1em .2em .1em rgba(36, 36, 36, 0.497));
-  
+
 }
 
 /********************/
@@ -28,17 +29,19 @@
 
 body {
   background-color: var(--groen);
+  background: radial-gradient(circle at right top, var(--lichte-groen) 30%, var(--groen) 30%);
   margin: 0 0 0 1em;
   overflow-x: hidden;
-display: grid;
-gap: 2em;
-
+  display: grid;
+  gap: 1.5em;
+  overflow-x: hidden;
 }
 
 
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--algemene-text)
 }
 
@@ -46,6 +49,7 @@ li {
   list-style: none;
   font-family: var(--algemene-text);
 }
+
 img {
   width: 5em;
   height: 5em;
@@ -74,32 +78,33 @@ header {
   align-items: end;
   position: relative;
   height: 30vh;
-  
+
 }
 
 
 
-header section:nth-of-type(1){
+header section:nth-of-type(1) {
   display: flex;
   align-items: center;
   position: absolute;
   right: 1em;
-top: 0;
+  top: 0;
 }
 
 header section:nth-of-type(1) img {
-width: 3em;
-height: 3em;
-aspect-ratio: 1;
+  width: 3em;
+  height: 3em;
+  aspect-ratio: 1;
 }
+
 header h2 {
-  font-size: 5em;
+  font-size: 4.5em;
   margin-bottom: .3em
 }
 
 header section ul {
-display: flex;
-gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 header section ul li {
@@ -108,30 +113,45 @@ header section ul li {
   border-radius: 3em;
   filter: var(--tags-drop-shadow);
 }
+
 /*********/
 /* MAIN  */
 /*********/
 main {
+  height: 70vh;
   width: 100%;
-  /* height: 100vh; */
-  /* block-size: 90vmin; */
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-padding-bottom: 1em;
-  gap: 1.2em;
+  /* overflow-x: auto; */
+
 }
 
-main section {
+main img {
+  block-size: 4em;
+  aspect-ratio: 1;
+}
+
+main #content {
+  display: flex;
+  gap: 1.2em;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  /* background-color: var(--grijs); */
+  width: 100vw;
+  /* height: vh; */
+  padding-bottom: 1em;
+}
+
+main #content article {
+  position:relative;
   scroll-snap-align: center;
   background-color: var(--grijs);
-  /* block-size: 95vmin; */
+  flex-direction: row;
   width: 80vw;
-  height: 60vh;
+  max-width: 25em;
+  height: 70vh;
   aspect-ratio: 1;
   border-radius: 3em;
-  padding: 1em;
-box-shadow: .01em .4em .3em rgba(0, 0, 0, 0.325);
+  padding: 1.5em;
+  box-shadow: .01em .4em .3em rgba(0, 0, 0, 0.325);
 }
 
 main ul li {
@@ -139,26 +159,97 @@ main ul li {
   font-weight: 400;
 }
 
-main section  {
-display: grid;
+/*****************************/
+/* CONTENT BINNEN DE ARTICLE */
+/*****************************/
+#content article q {
+  color: var(--donker-blauw);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-top: 4em;
+  text-align: center;
+}
 
+#content section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+#content section:nth-of-type(1) p{
+    font-family: var(--algemene-text);
+      font-weight: bold;
+      align-self: flex-end;
+      margin-top: 1em;
 }
 
 
+/* De selector selecteert alleem de biografie van de persoon */
+ #content section:nth-of-type(2) p{
+  font-family: var(--paragraaf);
+  font-size: 1em;
+  font-weight: 300;
+  padding-right: 1.5em;
+} 
 
-
-
-
-
-figure:nth-of-type(1) {
-  top: -10%;
-  right: -10%;
+#content section:nth-of-type(2) {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  bottom: 10%;
 }
 
-figure:nth-of-type(2) {
-  bottom: -10%;
+/* Tags */
+#content  li {
+  position: absolute;
+  bottom: 2%;
   left: 10%;
+  color: var(--donker-groen)
 }
+
+/*****************/
+/* LOADING STATE */
+/*****************/
+.loading.loading-content {
+  width: 80vw;
+  height: 60vh;
+  aspect-ratio: 1;
+  border-radius: 3em;
+  padding: 1em;
+  background-color: var(--donker-groen);
+  display: none;
+  justify-content: center;
+}
+
+
+.loading.display {
+  display: block;
+}
+
+
+
+/* .loading.skeleton-header {
+  background-color: var(--donker-groen);
+
+}
+
+.loading.skeleton-header:has(section) {
+  opacity: 0;
+}
+
+.loading.skeleton-content {
+  background-color: var(--donker-groen);
+  width: 80vw;
+  height: 60vh;
+  aspect-ratio: 1;
+  border-radius: 3em;
+  padding: 1em;
+} */
+
+
+
 
 /************************/
 /* Voor groter schermen */
@@ -167,35 +258,36 @@ figure:nth-of-type(2) {
   body {
     overflow-x: hidden;
     display: grid;
-  
+
+
 
   }
 
   header {
     place-self: center;
+      height: 20vh;
   }
 
-  main {
-   
-    overflow: hidden;
-    scroll-snap-type: none;
-  overflow-x: hidden ;
-  place-self: center;
-  width: 70%;
 
 
-  }
 
-  .grid-container-for-desktop {
-    display: grid;
-    /* block-size: 50em; */
-    /* grid-template-columns: repeat( 3, 1fr); */
-   
+  main #content {
+    flex-direction: row;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* height: 70vh; */
+    scroll-snap-type: y proximity;
+    /* overflow-x: auto ; */
+    place-self: center;
+    width: 70%;
+
 
   }
 
-  main section {
+
+
+  main #content article {
     width: 100%;
-      aspect-ratio: 1;
+    aspect-ratio: 1;
+    scroll-snap-align: center;
   }
 }
