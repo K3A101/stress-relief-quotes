@@ -17,7 +17,7 @@
   --zwart: #202020;
   --algemene-text: 'Josefin Sans', sans-serif;
   --quote-text: 'Gloock', serif;
-  --paragraaf: 'Inter',sans-serif;
+  --paragraaf: 'Inter', sans-serif;
   --tags-drop-shadow: drop-shadow(.1em .2em .1em rgba(36, 36, 36, 0.497));
 
 }
@@ -60,14 +60,7 @@ q {
   font-family: var(--quote-text);
 }
 
-figure {
-  background-color: var(--lichte-groen);
-  block-size: 20em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -3;
-}
+
 
 /**********/
 /* HEADER */
@@ -91,6 +84,17 @@ header section:nth-of-type(1) {
   top: 0;
 }
 
+#image-container {
+  width: 3em;
+  height: 3em;
+  aspect-ratio: 1;
+  background-size: 3em;
+}
+
+#image-container.placeholder {
+  background-color: var(--donker-groen);
+}
+
 header section:nth-of-type(1) img {
   width: 3em;
   height: 3em;
@@ -99,15 +103,19 @@ header section:nth-of-type(1) img {
 
 header h2 {
   font-size: 4.5em;
-  margin-bottom: .3em
+  margin-bottom: .3em;
+  width: fit-content;
+
 }
 
-header section ul {
+
+
+header section:nth-of-type(2) ul {
   display: flex;
   gap: 1em;
 }
 
-header section ul li {
+header section:nth-of-type(2) ul li {
   background-color: var(--grijs);
   padding: .5em 1em;
   border-radius: 3em;
@@ -141,7 +149,7 @@ main #content {
 }
 
 main #content article {
-  position:relative;
+  position: relative;
   scroll-snap-align: center;
   background-color: var(--grijs);
   flex-direction: row;
@@ -176,21 +184,21 @@ main ul li {
   flex-direction: column;
 }
 
-#content section:nth-of-type(1) p{
-    font-family: var(--algemene-text);
-      font-weight: bold;
-      align-self: flex-end;
-      margin-top: 1em;
+#content section:nth-of-type(1) p {
+  font-family: var(--algemene-text);
+  font-weight: bold;
+  align-self: flex-end;
+  margin-top: 1em;
 }
 
 
 /* De selector selecteert alleem de biografie van de persoon */
- #content section:nth-of-type(2) p{
+#content section:nth-of-type(2) p {
   font-family: var(--paragraaf);
   font-size: 1em;
   font-weight: 300;
   padding-right: 1.5em;
-} 
+}
 
 #content section:nth-of-type(2) {
   position: absolute;
@@ -202,7 +210,7 @@ main ul li {
 }
 
 /* Tags */
-#content  li {
+#content li {
   position: absolute;
   bottom: 2%;
   left: 10%;
@@ -212,6 +220,15 @@ main ul li {
 /*****************/
 /* LOADING STATE */
 /*****************/
+.loading.loading-avatar {
+  width: 3em;
+  height: 3em;
+  aspect-ratio: 1;
+  content: none;
+  background-color: var(--donker-groen);
+}
+
+
 .loading.loading-content {
   width: 80vw;
   height: 60vh;
@@ -223,6 +240,13 @@ main ul li {
   justify-content: center;
 }
 
+.loading-app-name {
+  background-color: var(--donker-groen);
+color: var(--donker-groen);
+width: 4em;
+
+    
+}
 
 .loading.display {
   display: block;
@@ -265,7 +289,7 @@ main ul li {
 
   header {
     place-self: center;
-      height: 20vh;
+    height: 20vh;
   }
 
 
