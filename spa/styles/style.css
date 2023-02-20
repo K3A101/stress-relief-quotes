@@ -85,13 +85,12 @@ header section:nth-of-type(1) {
   display: flex;
 
   align-items: center;
-  /* position: absolute;
-  right: 1em;
-  top: 0; */
+  gap: .5em;
 }
 
 header section:nth-of-type(1) h1 {
   font-size: 1em;
+  align-self: flex-end
 }
 
 #image-container {
@@ -165,7 +164,7 @@ main #content {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   /* background-color: var(--grijs); */
-  width: 100vw;
+  width: 95vw;
 
   padding-bottom: 1em;
 }
@@ -276,27 +275,6 @@ main ul li {
 
 
 
-/* .loading.skeleton-header {
-  background-color: var(--donker-groen);
-
-}
-
-.loading.skeleton-header:has(section) {
-  opacity: 0;
-}
-
-.loading.skeleton-content {
-  background-color: var(--donker-groen);
-  width: 80vw;
-  height: 60vh;
-  aspect-ratio: 1;
-  border-radius: 3em;
-  padding: 1em;
-} */
-
-
-
-
 /************************/
 /* Voor groter schermen */
 /************************/
@@ -337,7 +315,7 @@ main ul li {
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
 
-    /* width: 70%; */
+    width: 100vw;
 
 
   }
