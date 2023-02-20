@@ -104,7 +104,7 @@ function replaceAppName() {
   // const appTitle = document.querySelector('loading-app-name');
   
   window.addEventListener('load', () => {
-    textTitle.innerText = "Design quotes";
+    textTitle.innerHTML = `Design <span>quotes</span>`;
     textTitle.classList.remove('loading-app-name');
   })
 }
