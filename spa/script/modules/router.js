@@ -14,12 +14,13 @@ export function onRouteChanged() {
 
     switch (hash) {
         case "#content":
-            routerView.innerHTML = "<h1>Home Page</h1>";
+            window.location = "index.html"
             break;
 
         case "#about":
             console.log(globalData)
             routerView.innerHTML = "<h1>About Page</h1>";
+            
             break;
 
 
