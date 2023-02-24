@@ -19,7 +19,17 @@ export function onRouteChanged() {
 
         case "#about":
             console.log(globalData)
-            routerView.innerHTML = "<h1>About Page</h1>";
+            routerView.innerHTML = `  
+            
+            <section id="about">
+           
+            <article>
+                <h2>Over Design quotes</h2>
+                <p>Dit is de design quote app voor studenten die inspiratie zoeken.</p>
+            </article>
+            
+        </section>
+`;
             
             break;
 
