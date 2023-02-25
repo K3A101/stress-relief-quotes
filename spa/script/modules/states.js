@@ -43,3 +43,7 @@ export function replaceAppName() {
         textTitle.classList.remove('loading-app-name');
     })
 }
+
+function replaceUserName() {
+    const username = document.getElementById
+}
