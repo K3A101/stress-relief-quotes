@@ -44,6 +44,11 @@ export function replaceAppName() {
     })
 }
 
-function replaceUserName() {
-    const username = document.getElementById
+export function replaceUserName() {
+    const username = document.getElementById('username');
+
+    window.addEventListener('load', () => {
+        username.innerHTML =`Hi Keisha,`
+        username.classList.remove('loading-username');
+    })
 }

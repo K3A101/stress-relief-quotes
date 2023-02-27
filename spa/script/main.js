@@ -1,6 +1,7 @@
 import { fetchData } from "./modules/api.js";
 import { replaceUserImg } from "./modules/states.js";
 import { replaceAppName } from "./modules/states.js";
+import { replaceUserName } from "./modules/states.js";
 import { onRouteChanged } from "./modules/router.js";
 
 
@@ -12,6 +13,8 @@ fetchData()
 replaceUserImg()
 
 replaceAppName()
+
+replaceUserName()
 
 
 window.addEventListener("hashchange", onRouteChanged)
