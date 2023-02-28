@@ -2,6 +2,7 @@ import { showLoader } from "./states.js";
 import { checkError } from "./states.js";
 import { addTags } from "./filter.js";
 import { addData } from "./render.js";
+// import { displayErrorMessage } from "./states.js";
 
 
 export let globalData;
@@ -19,6 +20,8 @@ export function fetchData() {
         })
         .catch((error) => {
             console.log(error);
+
+           
         });
 
 }

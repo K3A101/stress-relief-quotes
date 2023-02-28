@@ -52,3 +52,4 @@ export function replaceUserName() {
         username.classList.remove('loading-username');
     })
 }
+
