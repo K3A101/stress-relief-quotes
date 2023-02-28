@@ -64,8 +64,19 @@ q {
 a {
   text-decoration: none;
   color: var(--donker-blauw);
+  cursor: pointer;
+  transition: .3s;
 }
 
+a:hover, a:active, a:focus-visible, a:focus {
+  color: var(--grijs);
+}
+
+a:focus {
+ outline-color: var(--donker-blauw);
+ outline-width: 2px;
+ outline-style: none;
+}
 /**********/
 /* HEADER */
 /**********/
@@ -218,6 +229,10 @@ main #content article {
   padding: 1.5em;
   box-shadow: .01em .4em .3em rgba(0, 0, 0, 0.325);
 }
+
+
+
+
 
 main ul li {
   font-family: var(--algemene-text);
