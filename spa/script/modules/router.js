@@ -25,7 +25,10 @@ export function onRouteChanged() {
            
             <article>
                 <h2>Over Design quotes</h2>
-                <p>Dit is de design quote app voor studenten die inspiratie zoeken.</p>
+                <p>Design quotes is een applicatie voor CMD studenten, die opzoek zijn naar 
+                inspirerende design quotes. Deze citaten zijn van bekende personen in de wereld van het web. </p>
+
+                <p> Design Quotes is gemaakt door Keisha Alexander </p>
             </article>
             
         </section>
