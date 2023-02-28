@@ -1,17 +1,27 @@
+![License MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+
 
 # Design quotes app
+ Design quotes is een applicatie voor studenten die opzoek zijn naar inspirerende design citaten om in hun werk te gebruiken. Design quotes is een single page application gemaakt met vanilla HTML, CSS en javascript.
+
  
- ### Belangrijk links
+ ### Belangrijk webpagina's
 
-- [Link naar visitekaart](https://k3a101.github.io/stress-relief-quotes/visitekaartje/)
-- [Link naar Single page web app](https://k3a101.github.io/stress-relief-quotes/spa/)
-
-
+- [Visitekaart](https://k3a101.github.io/stress-relief-quotes/visitekaartje/)
+- [Design quotes App](https://k3a101.github.io/stress-relief-quotes/spa/)
 
  ---
+ # Applicatie installeren
+ #### 1. Clone dit repository
+ ` git clone https://github.com/K3A101/stress-relief-quotes.git`
 
+#### 2. Verder werken in de spa bestand
+Als je verder op het project wil werken, moet je alles in het `spa/` bestand doen. In de spa bestandmap, vind je de alle belangrjke bestanden voor de design quotes app.
+
+---
 ## De opdracht 
-Voor de opdracht heb ik een single page gemaakt op basis van een user story. De single page is gemaakt met vanilla HTML, CSS en javascript. 
+ De opdracht voor dit project is een single page appicatie maken, op basis van een user story. 
 
 
 ## User story
@@ -36,11 +46,7 @@ Verder heb ik ook een design bedacht voor groter schermen. Hier verandert alleen
 --- 
 
 # API
-# Inleiding
-
-De quotes api ging stuk  en ik moest een nieuwe api toevoegen in mijn webappliatie. IK heb gekozen om zelf een api te maken met behulp van google sheets. De google sheet werk als een  backend database. 
-
-## Hoe maak je een eigen Api
+## Gemaakt API met google sheet
 
 Voor mijn project heb ik zelf een api gemaakt met behulp van google sheet en de APi van [Ben Borgers](https://github.com/benborgers/opensheet#readme). Om de spreadsheets een json bestand te maken heb ik een aantal stappen doorgenomen. 
 
@@ -83,7 +89,11 @@ Onderdelen in de activity flow zijn:
 - Wireflow van de states
 - Een swimlane van de url hash
 - Content  flow
+---
+# Licentie
+Deze project gebruikt de MIT Licentie.
 
+---
 
 ### Bronnen
 - https://github.com/benborgers/opensheet#readme
