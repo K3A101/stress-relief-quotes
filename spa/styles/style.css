@@ -130,15 +130,51 @@ header section:nth-of-type(1) nav ul {
   gap: 1em;
 }
 
+/****************/
+/* FILTER- MENU */
+/****************/
 header section:nth-of-type(2) ul {
+  position: absolute;
+  z-index: 1;
   display: flex;
+  flex-direction: column;
   gap: 1em;
+  padding: 1.5em;
+  height: fit-content;
+  width: 90vw;
+  background-color: var(--grijs);
+  filter: var(--tags-drop-shadow);
+  display: none;
+}
+
+header section button {
+  font-size: 1em;
+  font-family: var(--algemene-text);
+  border: none;
+  background-color: var(--grijs);
+  padding: .5em 1em;
+  border-radius: 1em;
 }
 
 header section:nth-of-type(2) ul li {
   background-color: var(--grijs);
-  padding: .5em 1em;
-  border-radius: 3em;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  line-height: 1.5;
+}
+
+header section:nth-of-type(2) ul.show-container {
+  display: block;
+  margin-top: .5em;
+  border-radius: 2em;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+  height: fit-content;
+  width: 90vw;
+  background-color: var(--grijs);
   filter: var(--tags-drop-shadow);
 }
 
@@ -324,6 +360,7 @@ body>figure img {
   }
 }
 
+
 /************************/
 /* Voor groter schermen */
 /************************/
@@ -348,6 +385,10 @@ body>figure img {
   header section:nth-of-type(1) nav ul {
     right: 6%;
   }
+
+    header section:nth-of-type(2) ul.show-container {
+      width: 20vw;
+    }
 
   main {
     /* display: grid; */
