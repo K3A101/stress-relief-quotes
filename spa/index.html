@@ -12,13 +12,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-<!-- Icons -->
+    <!-- Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <!-- Bron: https://fonts.google.com/icons -->
+    <!-- Bron: https://fonts.google.com/icons -->
     <title>Design Quotes</title>
 </head>
 
@@ -42,16 +42,7 @@
 
         <section>
             <h2 id="text-title" class="loading-app-name">Design<span>Quotes</span></h2>
-            <div>
-                <button>Filter</button>
-                <label for="search">
-                    <span class="material-symbols-outlined">
-                        search
-                    </span>
-                    <input id="search" type="text" placeholder="Search something...">
-                </label>
 
-            </div>
 
             <ul></ul>
 
@@ -60,8 +51,18 @@
 
     <h3>Quotes</h3>
 
+    <div id="searchbar">
+        <button>Tags</button>
+        <label for="search">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input id="search" type="text" placeholder="Search something...">
+        </label>
 
-<!-- Hierin zit de content -->
+    </div>
+
+    <!-- Hierin zit de content -->
     <main id="router-view" class="grid-container-for-desktop ">
 
         <!-- <p id="error-message"><span class="material-symbols-outlined">
@@ -73,7 +74,7 @@
         <!-- In de container #content wordt data uit de api gehaald  -->
         <section id="content">
             <div class="loading loading-content"></div>
-          
+
         </section>
 
 

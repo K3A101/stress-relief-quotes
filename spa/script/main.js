@@ -18,7 +18,7 @@ replaceAppName()
 replaceUserName()
 
 //eventlisteners
-const filterButton = document.querySelector('header section button');
+const filterButton = document.querySelector(' button');
 filterButton.addEventListener('click', openFilter);
 
 const searchIcon = document.querySelector('.material-symbols-outlined');
