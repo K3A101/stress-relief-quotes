@@ -4,6 +4,7 @@ import { replaceAppName } from "./modules/states.js";
 import { replaceUserName } from "./modules/states.js";
 import { onRouteChanged } from "./modules/router.js";
 import { openFilter } from "./modules/filter.js";
+import { showSearchBar } from "./modules/filter.js";
 
 
 
@@ -18,7 +19,10 @@ replaceUserName()
 
 //eventlisteners
 const filterButton = document.querySelector('header section button');
-filterButton.addEventListener('click', openFilter)
+filterButton.addEventListener('click', openFilter);
+
+const searchIcon = document.querySelector('.material-symbols-outlined');
+searchIcon.addEventListener('click', showSearchBar)
 
 //router
 window.addEventListener("hashchange", onRouteChanged)
