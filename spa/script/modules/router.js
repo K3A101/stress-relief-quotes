@@ -1,4 +1,4 @@
-import { globalData } from "./api.js";
+
 
 export function onRouteChanged() {
     // console.log(window.location.hash);
@@ -18,17 +18,16 @@ export function onRouteChanged() {
             break;
 
         case "#about":
-            console.log(globalData)
+           
             routerView.innerHTML = `  
             
             <section id="about">
            
             <article>
                 <h2>Over Design quotes</h2>
-                <p>Design quotes is een applicatie voor CMD studenten, die opzoek zijn naar 
-                inspirerende design quotes. Deze citaten zijn van bekende personen in de wereld van het web. </p>
+                <p>Design quotes is a single page application where students can view quotes from different design principles to gain inspiration for their projects.</p>
 
-                <p> Design Quotes is gemaakt door Keisha Alexander </p>
+                <p> Design Quotes is made by Keisha Alexander </p>
             </article>
             
         </section>

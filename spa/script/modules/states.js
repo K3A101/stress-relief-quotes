@@ -8,6 +8,19 @@ export function checkError(response) {
     }
 }
 
+export function displayErrorMessage() {
+    const theMain = document.querySelector('main');
+   let pElement = `
+      <p id="error-message"><span class="material-symbols-outlined">
+            refresh
+        </span> There seems to be an error, reload the page please.</p> 
+   `;
+
+   theMain.insertAdjacentHTML('beforeend', `${pElement}`);
+
+
+}
+
 // Loading states
 // De pagina toont een skeleton aan 
 export function showLoader() {
@@ -44,11 +57,12 @@ export function replaceAppName() {
     })
 }
 
+//Wanneer de paginageladen is wordt de gebruikersnaam zichtbaar
 export function replaceUserName() {
     const username = document.getElementById('username');
 
     window.addEventListener('load', () => {
-        username.innerHTML =`Hi Keisha,`
+        username.innerHTML =`Hi Keisha,`;
         username.classList.remove('loading-username');
     })
 }
