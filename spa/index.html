@@ -12,9 +12,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-
+<!-- Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- Bron: https://fonts.google.com/icons -->
     <title>Design Quotes</title>
 </head>
 
@@ -38,10 +42,6 @@
 
         <section>
             <h2 id="text-title" class="loading-app-name">Design<span>Quotes</span></h2>
-            <!-- <ul>
-                <li>Design</li>
-                <li>Development</li>
-            </ul> -->
             <div>
                 <button>Filter</button>
                 <label for="search">
@@ -64,14 +64,16 @@
 <!-- Hierin zit de content -->
     <main id="router-view" class="grid-container-for-desktop ">
 
-        <p id="error-message"></p>
+        <!-- <p id="error-message"><span class="material-symbols-outlined">
+            refresh
+        </span></p>
+        -->
 
         <!-- 1ste pagina -->
         <!-- In de container #content wordt data uit de api gehaald  -->
         <section id="content">
             <div class="loading loading-content"></div>
-            <!-- <article></article> -->
-            <!-- Tags -->
+          
         </section>
 
 
@@ -82,7 +84,6 @@
     <!-- Swipe animatie -->
     <figure>
         <img src="./images/pointer.svg" alt="Pointer">
-
     </figure>
 
 
