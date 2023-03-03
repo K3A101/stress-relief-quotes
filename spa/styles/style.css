@@ -189,6 +189,41 @@ header section:nth-of-type(2) ul.show-container {
   filter: var(--tags-drop-shadow);
 }
 
+header section:nth-of-type(2) > div {
+  display: flex;
+  gap: .5em;
+}
+
+header section:nth-of-type(2) label {
+  margin-left: 3em;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Icons */
+/* De searchbar */
+header section:nth-of-type(2) input {
+  transition: 1s;
+ width: 0%;
+opacity: 0;
+padding: .5em;
+border-radius: .5em;
+margin-left:.2em;
+}
+
+header section:nth-of-type(2) input:focus {
+  outline-color: #43685D;
+  background-color: #99C7B9;
+  outline-width: .3em;
+}
+
+header section:nth-of-type(2) input.show-searchbar{
+  display: inline-block;
+  width: 100%;
+  opacity: 1;
+  border: none;
+
+}
 /*********/
 /* MAIN  */
 /*********/

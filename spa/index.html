@@ -6,25 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@300;400;700&family=Josefin+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <title>Design Quotes</title>
 </head>
 
 <body>
 
-
+    <!-- Dit is de header  -->
     <header class="skeleton-header">
         <section>
             <!-- Met javascript wordt de image-container verplaatst naar een img element -->
             <img id="image-container" class="placeholder">
             <!-- <img class="loading loading-avatar" src="./images/mijn-foto.jpg" alt="Avatar van de student"> -->
-            <h1  id="username" class=" loading-username">Hi keisha,</h1>
+            <h1 id="username" class=" loading-username">Hi keisha,</h1>
             <nav>
                 <ul>
                     <li><a href="#content">Home </a></li>
@@ -40,8 +42,18 @@
                 <li>Design</li>
                 <li>Development</li>
             </ul> -->
-        <button>Filter</button>
-        <ul></ul>
+            <div>
+                <button>Filter</button>
+                <label for="search">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <input id="search" type="text" placeholder="Search something...">
+                </label>
+
+            </div>
+
+            <ul></ul>
 
         </section>
     </header>
@@ -49,41 +61,32 @@
     <h3>Quotes</h3>
 
 
-
+<!-- Hierin zit de content -->
     <main id="router-view" class="grid-container-for-desktop ">
-         
+
         <p id="error-message"></p>
-       
-        
+
+        <!-- 1ste pagina -->
         <!-- In de container #content wordt data uit de api gehaald  -->
         <section id="content">
             <div class="loading loading-content"></div>
             <!-- <article></article> -->
             <!-- Tags -->
-
-
         </section>
 
-        <!-- <section id="about">
-           
-            <article>
-                <h2>Over Design quotes</h2>
-                <p>Dit is de design quote app voor studenten die inspiratie zoeken.</p>
-            </article>
-            
-        </section> -->
 
+        <!-- Hier is de aboutpagina -->
 
     </main>
 
-     <!-- Swipe animatie -->
-<figure>
-    <img src="./images/pointer.svg" alt="Pointer">
+    <!-- Swipe animatie -->
+    <figure>
+        <img src="./images/pointer.svg" alt="Pointer">
 
-</figure>
-        
-  
-<script type="module" src="./script/main.js" ></script>
+    </figure>
+
+
+    <script type="module" src="./script/main.js"></script>
 </body>
 
 </html>
