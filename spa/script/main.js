@@ -1,11 +1,7 @@
 import { fetchData } from "./modules/api.js";
-import { replaceUserImg } from "./modules/states.js";
-import { replaceAppName } from "./modules/states.js";
-import { replaceUserName } from "./modules/states.js";
+import { replaceUserImg, replaceAppName, replaceUserName } from "./modules/states.js";
 import { onRouteChanged } from "./modules/router.js";
-import { openFilter } from "./modules/filter.js";
-import { showSearchBar } from "./modules/filter.js";
-
+import { openFilter, showSearchBar, filterBy } from "./modules/filter.js";
 
 
 // functies
@@ -24,9 +20,9 @@ filterButton.addEventListener('click', openFilter);
 const searchIcon = document.querySelector('.material-symbols-outlined');
 searchIcon.addEventListener('click', showSearchBar)
 
+searchIcon.addEventListener('click', filterBy)
+
 //router
 window.addEventListener("hashchange", onRouteChanged)
 
-
 // Bron: https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
-
