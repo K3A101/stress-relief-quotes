@@ -5,12 +5,25 @@
 # Design quotes app
  Design quotes is een applicatie voor studenten die opzoek zijn naar inspirerende design citaten om in hun werk te gebruiken. De applicatie heeft een lijst met citaten van verschillende beroemde developers en ontwerpers. Elke citaat bestaat uit de auteur van de citaat, een biografie van de auteur, een foto van de auteur zelf.  De tweede pagina van de applicatie is een about pagina met een korte beschrijving van de applicatie. Tenslotte is de single page applicatie gemaakt met vanilla HTML, CSS en Javascript.  
 
+ ![Poster van de single page applicatie](./spa/images/desktop-v2.png)
+
  
  ### Belangrijk webpagina's
 
 - [Visitekaart](https://k3a101.github.io/stress-relief-quotes/visitekaartje/)
 - [Design quotes App](https://k3a101.github.io/stress-relief-quotes/spa/)
-
+---
+# Inhoudspagina
+- [Design quotes app](https://github.com/K3A101/stress-relief-quotes#design-quotes-app)
+- [Belangrijke webpaginas](https://github.com/K3A101/stress-relief-quotes#belangrijk-webpaginas)
+- [Applicatie installeren](https://github.com/K3A101/stress-relief-quotes#applicatie-installeren)
+- [De opdracht](https://github.com/K3A101/stress-relief-quotes#de-opdracht)
+- [Idee](https://github.com/K3A101/stress-relief-quotes#idee)
+- [Design](https://github.com/K3A101/stress-relief-quotes#design)
+- [Features]()
+- [API](https://github.com/K3A101/stress-relief-quotes#api)
+- [Activity flow](https://github.com/K3A101/stress-relief-quotes#activity-flow)
+- [Bronnen](https://github.com/K3A101/stress-relief-quotes#bronnen)
  ---
  # Applicatie installeren
  #### 1. Clone dit repository
@@ -20,7 +33,7 @@
 Als je verder op het project wil werken, moet je alles in het `spa/` bestand doen. In de spa bestandmap, vind je de alle belangrjke bestanden voor de design quotes app.
 
 ---
-## De opdracht 
+# De opdracht 
  De opdracht voor dit project is een single page appicatie maken, op basis van een user story. 
 
 
@@ -43,6 +56,18 @@ Verder heb ik ook een design bedacht voor groter schermen. Hier verandert alleen
 
 <img src="./spa/images/desktop-design.png">
 
+
+## Features
+- [x] Loading state voordat de data geladen wordt.
+- [x] Empty state wanneer de data geladen wordt.
+- [x] Error state wanneer de data niet geladen wordt.
+
+---
+## Wishlist
+- [ ] Filtreren op basis van de tags
+- [ ] Filtreren op basis van een searchbar
+- [ ] Er komt een pop up met instructie wanneer de gebruiker voor het eerst op de applicatie komt.
+
 --- 
 
 # API
@@ -57,10 +82,7 @@ Voor mijn project heb ik zelf een api gemaakt met behulp van google sheet en de 
    <img src="./spa/images/quote-api-spreadsheet.png">
     
 - De header is vetgedrukt en die is de objectnaam. Ik heb ook de eerste row gevriesd want anders krijg foutmelding
-- Verder heb ik mijn spreadsheats gepubliceerd op de web
-    
-    <img src="./spa/images/publish-to-web.png">
-    
+- Verder heb ik mijn spreadsheats gepubliceerd op de web.    
 - De sharing link heb ik iedereen als viewer gegeven. Ik ben de enige met toegang naar het spreadsheet.
 - Ik heb de api link van Ben Borgers gebruikt. 
   
