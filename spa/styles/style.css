@@ -163,7 +163,7 @@ header section:nth-of-type(2) ul {
   display: none;
 }
 
-header section button {
+body button {
   font-size: 1em;
   font-family: var(--algemene-text);
   border: none;
@@ -184,6 +184,7 @@ header section:nth-of-type(2) ul.show-container {
   border-radius: 2em;
   position: absolute;
   z-index: 1;
+  transform: translateY(6em);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -194,20 +195,25 @@ header section:nth-of-type(2) ul.show-container {
   filter: var(--tags-drop-shadow);
 }
 
-header section:nth-of-type(2) > div {
+/************/
+/* SEARCBAR */
+/************/
+
+ #searchbar {
   display: flex;
-  gap: .5em;
+  gap: 1.5em;
+
 }
 
-header section:nth-of-type(2) label {
-  margin-left: 3em;
+ #searchbar label {
+  /* margin-left: 3em; */
   display: inline-flex;
   align-items: center;
 }
 
 /* Icons */
 /* De searchbar */
-header section:nth-of-type(2) input {
+ #searchbar input {
   transition: 1s;
  width: 0%;
 opacity: 0;
@@ -216,13 +222,13 @@ border-radius: .5em;
 margin-left:.2em;
 }
 
-header section:nth-of-type(2) input:focus {
+ #searchbar input:focus {
   outline-color: #43685D;
   background-color: #99C7B9;
   outline-width: .3em;
 }
 
-header section:nth-of-type(2) input.show-searchbar{
+ #searchbar input.show-searchbar{
   display: inline-block;
   width: 100%;
   opacity: 1;
