@@ -22,3 +22,9 @@ export function openFilter() {
   searchBar.classList.toggle('show-searchbar');
 
 }
+
+export function filterBy() {
+  console.log('hello')
+  const searchInput = document.getElementById('search');
+  console.log(searchInput.value)
+}

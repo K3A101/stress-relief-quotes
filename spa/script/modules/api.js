@@ -4,6 +4,8 @@ import { addTags } from "./filter.js";
 import { addData } from "./render.js";
 import { displayErrorMessage } from "./states.js";
 
+export const searchInput = document.getElementById('search');
+
 
 export let globalData;
 
@@ -15,11 +17,13 @@ export function fetchData() {
 
             addTags(data)
             addData(data)
+           
 
-            console.log(data)
+            console.log(searchInput.value)
+      
         })
         .catch((error) => {
-            console.log(error);
+           
 
             
         displayErrorMessage()
