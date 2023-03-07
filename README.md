@@ -120,3 +120,9 @@ Deze project gebruikt de MIT Licentie.
 ### Bronnen
 - https://github.com/benborgers/opensheet#readme
 - https://benborgers.com/posts/google-sheets-json
+- https://app.uxcel.com/courses/designing-wireframes/what-are-wireflows-804
+- https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
+- https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
+- https://learnwithparam.com/blog/how-to-handle-fetch-errors/
+- https://stackoverflow.com/questions/39978986/multiple-content-pages-in-single-html-file
+- chatgpt
