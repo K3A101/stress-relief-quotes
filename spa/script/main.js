@@ -21,12 +21,14 @@ replaceUserName()
 // searchIcon.addEventListener('click', filterBy)
 
 const searchInput = document.getElementById('search');
+const theContent = document.getElementById('content')
 let newArray = [];
 
 fetch('https://opensheet.elk.sh/14joQ9h8M0ydoJJ-fNYN68ls3TWPCvk8ZvBJvUXpF1cQ/sheet1')
 .then(response => response.json())
 .then(data => {
     newArray = data;
+    updateDisplayData(newArray)
 })
 .catch(error => console.error(error));
 
@@ -35,12 +37,42 @@ searchInput.addEventListener('input', ()=> {
 
     if(newArray.length > 0) {
         const filteredArray = newArray.filter(item => {
-            return item.author.toLowerCase().includes(query);
+             return item.author.toLowerCase().includes(query);
+            //  item.tags.toLowerCase().includes(query);
         });
         
-                console.log(filteredArray)
+                updateDisplayData(filteredArray)
     }
-})
+});
+
+
+function updateDisplayData(data) {
+    theContent.innerHTML = '';
+
+
+    let html = ''
+    data.forEach(item => {
+
+        html += `
+          <article>
+           <section>
+              <q>${item.quote}</q>
+
+              <p class="author">${item.author}</p>
+            </section>
+            <section>
+              <img src="${item.avatar}" alt="Avatar">
+              <p>${item.bio}</p>
+            </section>
+            <ul>
+              <li>${item.tags}</li>                
+            </ul>             
+          </article>
+      `;
+    });
+
+    theContent.insertAdjacentHTML('beforeend', html);
+}
 
 
 //router
