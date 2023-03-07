@@ -3,8 +3,9 @@ import { checkError } from "./states.js";
 import { addTags } from "./filter.js";
 import { addData } from "./render.js";
 import { displayErrorMessage } from "./states.js";
+import { searchInput } from "./filter.js";
 
-export const searchInput = document.getElementById('search');
+// export const searchInput = document.getElementById('search');
 
 
 export let globalData;
@@ -17,17 +18,14 @@ export function fetchData() {
 
             addTags(data)
             addData(data)
-           
-
-            console.log(searchInput.value)
-      
+          
         })
         .catch((error) => {
-           
 
-            
-        displayErrorMessage()
-      
+
+
+            displayErrorMessage()
+
         });
-
-}
+   
+    }
