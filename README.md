@@ -45,16 +45,16 @@ Als je verder op het project wil werken, moet je alles in het `spa/` bestand doe
 ## Idee 
 Mijn idee is een quote app voor studenten die opzoek naar inspiratie voor hun projecten. De app heet Design quotes. In design quotes kun je aanmelden en krijg je een lijst met inspirerende quotes van experts in het gebied van design en de web. De quotes worden constant up to date dus elke dag komen meer quotes erbij. Elk citaat bevat een tag die je kan filtreren op basis van design onderwerpen. 
 
-<img src="./spa/images/wireflow-met-ui-stack.jpg">
+<img src="./spa/images/wireflow-v2.png">
 
 ## Design
 Hieronder staat het design van de design quotes app. Hier bij had ik ook nagedacht aan de UI stactk die daarbij horen zoals de empty state, loading state en de error state.  
 
-<img src="./spa/images/app-designs-screen.png">
+<img src="./spa/images/design-v2.png">
 
 Verder heb ik ook een design bedacht voor groter schermen. Hier verandert alleen de layout. Hier ga je vertical scrollen.
 
-<img src="./spa/images/desktop-design.png">
+<img src="./spa/images/desktop-v2.png">
 
 
 ## Features
