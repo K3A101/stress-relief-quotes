@@ -1,9 +1,14 @@
+// Variabele
+export const searchInput = document.getElementById('search');
+export let myArray = []
+
+
 
 export function addTags(data) {
     const tagsContainer = document.querySelector('header section:nth-of-type(2) ul');
 
     let listItem = ''
-data.forEach(item => {
+data.map(item => {
   listItem = `<li>${item.tags}</li>`;
 
   tagsContainer.insertAdjacentHTML('beforeend', `${listItem}`)
@@ -26,5 +31,6 @@ export function openFilter() {
 export function filterBy() {
   console.log('hello')
   const searchInput = document.getElementById('search');
+
   console.log(searchInput.value)
 }
