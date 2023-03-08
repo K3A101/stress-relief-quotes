@@ -8,7 +8,6 @@ import { displayErrorMessage } from "./states.js";
 // export const searchInput = document.getElementById('search');
 
 
-export let globalData;
 
 export function fetchData() {
     showLoader()

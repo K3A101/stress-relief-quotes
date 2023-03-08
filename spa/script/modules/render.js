@@ -27,3 +27,33 @@ export function addData(data) {
     });
 
 }
+
+// Voor de gefilterde versie
+export function updateDisplayData(data) {
+  const theContent = document.getElementById('content');
+  theContent.innerHTML = '';
+
+
+  let html = ''
+  data.forEach(item => {
+
+    html += `
+          <article>
+           <section>
+              <q>${item.quote}</q>
+
+              <p class="author">${item.author}</p>
+            </section>
+            <section>
+              <img src="${item.avatar}" alt="Avatar">
+              <p>${item.bio}</p>
+            </section>
+            <ul>
+              <li>${item.tags}</li>                
+            </ul>             
+          </article>
+      `;
+  });
+
+  theContent.insertAdjacentHTML('beforeend', html);
+}
