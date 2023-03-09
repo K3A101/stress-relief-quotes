@@ -2,16 +2,17 @@
 
 
 
-# Design quotes app
+# [Design quotes app](https://k3a101.github.io/stress-relief-quotes/spa)
  Design quotes is een applicatie voor studenten die opzoek zijn naar inspirerende design citaten om in hun werk te gebruiken. De applicatie heeft een lijst met citaten van verschillende beroemde developers en ontwerpers. Elke citaat bestaat uit de auteur van de citaat, een biografie van de auteur, een foto van de auteur zelf.  De tweede pagina van de applicatie is een about pagina met een korte beschrijving van de applicatie. Tenslotte is de single page applicatie gemaakt met vanilla HTML, CSS en Javascript.  
 
- ![Poster van de single page applicatie](./spa/images/desktop-v2.png)
+ ![Poster van de single page applicatie](./spa/images/desktop-v3.png)
 
  
  ### Belangrijk webpagina's
 
 - [Visitekaart](https://k3a101.github.io/stress-relief-quotes/visitekaartje/)
 - [Design quotes App](https://k3a101.github.io/stress-relief-quotes/spa/)
+- [Procesverslag](https://github.com/K3A101/stress-relief-quotes/wiki)
 ---
 # Inhoudspagina
 - [Design quotes app](https://github.com/K3A101/stress-relief-quotes#design-quotes-app)
@@ -29,7 +30,10 @@
  #### 1. Clone dit repository
  ` git clone https://github.com/K3A101/stress-relief-quotes.git`
 
-#### 2. Verder werken in de spa bestand
+ #### 2. Packages installeren
+ `npm install`
+
+#### 3. Verder werken in de spa bestand
 Als je verder op het project wil werken, moet je alles in het `spa/` bestand doen. In de spa bestandmap, vind je de alle belangrjke bestanden voor de design quotes app.
 
 ---
@@ -42,17 +46,17 @@ Als je verder op het project wil werken, moet je alles in het `spa/` bestand doe
 
 
 
-## Idee 
-Mijn idee is een quote app voor studenten die opzoek naar inspiratie voor hun projecten. De app heet Design quotes. In design quotes kun je aanmelden en krijg je een lijst met inspirerende quotes van experts in het gebied van design en de web. De quotes worden constant up to date dus elke dag komen meer quotes erbij. Elk citaat bevat een tag die je kan filtreren op basis van design onderwerpen. 
+## Eerste concept 
+Mijn idee is een quote app voor studenten die opzoek zijn naar inspiratie voor hun projecten. De app heet Design quotes. In design quotes kun je aanmelden en een lijst krijgen met inspirerende quotes van experts in het gebied van design en de web. De quotes worden constant up to date dus elke dag komen er meer quotes erbij. Elk citaat bevat een tag die je kan filtreren op basis van design onderwerpen. 
 
 <img src="./spa/images/wireflow-v3.png">
 
 ## Design
-Hieronder staat het design van de design quotes app. Hier bij had ik ook nagedacht aan de UI stactk die daarbij horen zoals de empty state, loading state en de error state.  
+Hieronder staat het design van Design quotes app. Hier bij had ik ook nagedacht aan de UI stack die daarbij horen zoals de zero state, loading state en de error state.  
 
 <img src="./spa/images/design-v3.png">
 
-Verder heb ik ook een design bedacht voor groter schermen. Hier verandert alleen de layout. Hier ga je vertical scrollen.
+Verder heb ik ook een design bedacht voor grotere schermen. Hier verandert alleen de layout. De content is verdeeld in drie kolommen. 
 
 <img src="./spa/images/desktop-v3.png">
 
@@ -77,24 +81,23 @@ Voor mijn project heb ik zelf een api gemaakt met behulp van google sheet en de 
 
 ### Stappen
 
-- Data invullen in google sheets
+- Data invullen in google sheets.
     
-   <img src="./spa/images/quote-api-spreadsheet.png">
+<img src="./spa/images/quote-api-spreadsheet.png">
     
 - De header is vetgedrukt en die is de objectnaam. Ik heb ook de eerste row gevriesd want anders krijg foutmelding
 - Verder heb ik mijn spreadsheats gepubliceerd op de web.    
 - De sharing link heb ik iedereen als viewer gegeven. Ik ben de enige met toegang naar het spreadsheet.
 - Ik heb de api link van Ben Borgers gebruikt. 
   
-   ```
-    https://opensheet.elk.sh/spreadsheet_id/tab_name
+ ```
+https://opensheet.elk.sh/spreadsheet_id/tab_name
 
-   ```
-
+ ```
 - Ik heb  mij spreadsheet code/id and sheet naam aan de link toegevoegd:
 ```
  https://opensheet.elk.sh/14joQ9h8M0ydoJJ-fNYN68ls3TWPCvk8ZvBJvUXpF1cQ/sheet1
- ```
+```
 - De code kun je vinden bij de url van de spreadsheet bestand.
 
   <img src="./spa/images/json-bestand.png">
