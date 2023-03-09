@@ -1,7 +1,7 @@
 import { fetchData } from "./modules/api.js";
 import { replaceUserImg, replaceAppName, replaceUserName } from "./modules/states.js";
 import { onRouteChanged } from "./modules/router.js";
-import { updateDisplayData } from "./modules/render.js";
+import { updateFilterData } from "./modules/render.js";
 import { openFilter } from "./modules/filter.js";
 
 //Variabele
@@ -28,7 +28,7 @@ function filterDataByName(){
 .then(response => response.json())
 .then(data => {
     newArray = data;
-    updateDisplayData(newArray)
+    updateFilterData(newArray)
 })
 .catch(error => console.error(error));
 }
@@ -42,7 +42,7 @@ searchInput.addEventListener('input', ()=> {
             //  item.tags.toLowerCase().includes(query);
         });
         
-                updateDisplayData(filteredArray)
+                updateFilterData(filteredArray)
     }
     
 });

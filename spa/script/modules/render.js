@@ -29,7 +29,7 @@ export function addData(data) {
 }
 
 // Voor de gefilterde versie
-export function updateDisplayData(data) {
+export function updateFilterData(data) {
   const theContent = document.getElementById('content');
   theContent.innerHTML = '';
 
