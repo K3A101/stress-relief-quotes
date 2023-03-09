@@ -121,11 +121,10 @@ Deze project gebruikt de MIT Licentie.
 ---
 
 ### Bronnen
-- https://github.com/benborgers/opensheet#readme
-- https://benborgers.com/posts/google-sheets-json
-- https://app.uxcel.com/courses/designing-wireframes/what-are-wireflows-804
-- https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
-- https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
-- https://learnwithparam.com/blog/how-to-handle-fetch-errors/
-- https://stackoverflow.com/questions/39978986/multiple-content-pages-in-single-html-file
-- chatgpt
+- B. (z.d.). GitHub - benborgers/opensheet: 💾 An API to get a Google Sheet as JSON, no authentication required. GitHub. https://github.com/benborgers/opensheet#readme
+- How to get a Google Sheet as JSON. (z.d.). https://benborgers.com/posts/google-sheets-json
+- Uxcel - Where design careers are built. (z.d.). Uxcel. https://app.uxcel.com/courses/designing-wireframes/what-are-wireflows-804
+- A. (2019, 28 augustus). A Router Without a Web Server in Vanilla JavaScript. DEV Community. https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg
+- V. (2020, 2 december). Displaying loading animation on Fetch API calls. DEV Community. https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
+- Error handling while using native fetch API in JavaScript. (z.d.). Learn with Param. https://learnwithparam.com/blog/how-to-handle-fetch-errors/
+- multiple content “pages” in single html file. (z.d.). Stack Overflow. https://stackoverflow.com/questions/39978986/multiple-content-pages-in-single-html-file
