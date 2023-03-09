@@ -33,6 +33,7 @@ function filterDataByName(){
 .catch(error => console.error(error));
 }
 
+// Eventlisteners
 searchInput.addEventListener('input', ()=> {
     const query = searchInput.value.toLowerCase();
 
@@ -46,6 +47,7 @@ searchInput.addEventListener('input', ()=> {
     }
     
 });
+
 filterButton.addEventListener('click', openFilter);
 //router
 window.addEventListener("hashchange", onRouteChanged)
