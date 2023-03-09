@@ -106,14 +106,14 @@ Als je deze stappen uitvoert heb je een json bestand met een APi url die je kan 
 ---
 
 # Activity flow
-<img src="./spa/images/activity-flow-v1.png">
+<img src="./spa/images/activity-diagram-v2.png">
 
 De activity flow is een visualisatie van wat gebeurd in de achtergond . In mijn activity flow heb ik uitegwerkt hoe de loading state totdat de data geladen is.
 
 Onderdelen in de activity flow zijn:
 - Wireflow van de states
 - Een swimlane van de url hash
-- Content  flow
+- Control flow
 ---
 # Licentie
 Deze project gebruikt de MIT Licentie.
