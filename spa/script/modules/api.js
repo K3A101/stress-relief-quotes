@@ -15,17 +15,15 @@ export function fetchData() {
         .then(checkError)
         .then((data) => {
             
-
             addTags(data)
             addData(data)
           
         })
         .catch((error) => {
-
-
-
             displayErrorMessage()
 
         });
    
     }
+
+    // Bron: https://gomakethings.com/how-to-use-the-fetch-api-with-vanilla-js/

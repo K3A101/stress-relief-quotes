@@ -49,3 +49,5 @@ searchInput.addEventListener('input', ()=> {
 window.addEventListener("hashchange", onRouteChanged)
 
 // Bron: https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
+//Bron: https://flaviocopes.com/es-modules/
+//Bron: https://www.youtube.com/watch?v=R8rmfD9Y5-c

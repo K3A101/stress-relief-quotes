@@ -41,3 +41,4 @@ export function onRouteChanged() {
             break;
     }
 }
+// Bron: https://dev.to/aminnairi/a-router-without-a-web-server-in-vanilla-javascript-3bmg

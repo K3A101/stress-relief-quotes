@@ -57,3 +57,5 @@ export function updateDisplayData(data) {
 
   theContent.insertAdjacentHTML('beforeend', html);
 }
+
+// Bron: https://wesbos.com/template-strings-html

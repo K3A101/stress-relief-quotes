@@ -67,3 +67,4 @@ export function replaceUserName() {
     })
 }
 
+//  Bron: https://dev.to/vaishnavs/displaying-loading-animation-on-fetch-api-calls-1e5m
