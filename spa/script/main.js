@@ -2,9 +2,11 @@ import { fetchData } from "./modules/api.js";
 import { replaceUserImg, replaceAppName, replaceUserName } from "./modules/states.js";
 import { onRouteChanged } from "./modules/router.js";
 import { updateDisplayData } from "./modules/render.js";
+import { openFilter } from "./modules/filter.js";
 
 //Variabele
 const searchInput = document.getElementById('search');
+const filterButton = document.querySelector(' button');
 let newArray = [];
 
 // functies
@@ -44,7 +46,7 @@ searchInput.addEventListener('input', ()=> {
     }
     
 });
-
+filterButton.addEventListener('click', openFilter);
 //router
 window.addEventListener("hashchange", onRouteChanged)
 
