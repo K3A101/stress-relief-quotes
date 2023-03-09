@@ -69,8 +69,9 @@ Verder heb ik ook een design bedacht voor grotere schermen. Hier verandert allee
 
 ---
 ## Wishlist
-- [ ] Filtreren op basis van de tags
+- [ ] Filtreren op basis van de tags.
 - [ ] Er komt een pop up met instructie wanneer de gebruiker voor het eerst op de applicatie komt.
+- [ ] Een blank state, wanneer er geen resultaat wordt gevonden.
 
 --- 
 
