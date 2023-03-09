@@ -17,7 +17,6 @@ export function fetchData() {
             
             addTags(data)
             addData(data)
-          console.log(addTags)
         })
         .catch((error) => {
             displayErrorMessage()

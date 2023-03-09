@@ -40,7 +40,7 @@ searchInput.addEventListener('input', ()=> {
     if(newArray.length > 0) {
         const filteredArray = newArray.filter(item => {
              return item.author.toLowerCase().includes(query);
-            //  item.tags.toLowerCase().includes(query);
+           
         });
         
                 updateFilterData(filteredArray)
